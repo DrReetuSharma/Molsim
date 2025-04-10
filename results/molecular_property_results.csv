@@ -1,0 +1,11 @@
+SMILES,Mutagenicity (AMES Test Prediction),Carcinogenicity,Hepatotoxicity,Nephrotoxicity,Neurotoxicity,Cardiotoxicity,Genotoxicity,Developmental Toxicity,Respiratory Toxicity,General Cytotoxicity
+Cc1ccccc1,0.49,0.57,0.42,0.51,0.51,0.56,0.49,0.55,0.54,0.48
+CCO,0.56,0.52,0.41,0.51,0.42,0.35,0.54,0.62,0.51,0.44
+CC(=O)O,0.5,0.46,0.42,0.57,0.45,0.48,0.55,0.58,0.5,0.44
+C1CCCCC1,0.48,0.55,0.55,0.5,0.48,0.39,0.51,0.48,0.55,0.47
+Cc1ccccc1O,0.49,0.51,0.36,0.53,0.49,0.51,0.52,0.56,0.5,0.45
+CCN(CC)C(=O)C1CCCCC1,0.53,0.5,0.4,0.54,0.45,0.39,0.54,0.55,0.52,0.44
+C1=CC=C(C=C1)C=O,0.49,0.45,0.45,0.52,0.39,0.43,0.53,0.48,0.47,0.42
+CC(=O)NC1=CC=CC=C1,0.5,0.48,0.4,0.52,0.38,0.44,0.51,0.53,0.46,0.45
+CN1CCCC1=O,0.48,0.47,0.38,0.54,0.38,0.47,0.53,0.51,0.5,0.43
+C1=CC=C2C(=C1)C=CC=C2,0.49,0.5,0.47,0.55,0.42,0.42,0.51,0.48,0.48,0.44

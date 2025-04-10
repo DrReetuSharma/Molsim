@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Similarity Results</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+        <h1 class="text-3xl font-bold text-center mb-4">Similarity Matrix Results</h1>
+        
+        <div class="overflow-x-auto mb-6">
+            <h2 class="text-xl font-semibold mb-4">Similarity Matrix</h2>
+            {{ matrix|safe }}
+        </div>
+
+        <div class="text-center">
+            <h2 class="text-xl font-semibold mb-4">Heatmap</h2>
+            <img src="{{ heatmap }}" alt="Similarity Heatmap" class="mx-auto mb-6"/>
+            <a href="/download/{{ csv_file }}" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg">Download Similarity Matrix CSV</a>
+        </div>
+
+        <!-- Go Back Button -->
+        <div class="text-center mt-4">
+            <a href="javascript:history.back()" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">Go Back</a>
+        </div>
+
+        <footer class="text-center text-sm text-gray-600 mt-8">
+            <p>Contact: <a href="mailto:sharmar@aspire10x.com" class="text-blue-600">sharmar@aspire10x.com</a></p>
+            <p><a href="{{url_for ('documentation')}}" class="text-blue-600">Documentation</a></p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+// Scatter plot generation
+const ctx = document.getElementById('scatterPlot').getContext('2d');
+
+// Example data (replace with real data from predictions)
+const data = {
+    datasets: [{
+        label: 'Toxicity Predictions',
+        data: [
+            { x: 1, y: 0.2 }, // Replace these with real x,y values
+            { x: 2, y: 0.4 },
+            { x: 3, y: 0.6 },
+            { x: 4, y: 0.8 },
+        ],
+        backgroundColor: 'rgba(255, 99, 132, 0.5)'
+    }]
+};
+
+const config = {
+    type: 'scatter',
+    data: data,
+    options: {
+        scales: {
+            x: {
+                title: {
+                    display: true,
+                    text: 'Molecule ID'
+                }
+            },
+            y: {
+                title: {
+                    display: true,
+                    text: 'Prediction Score'
+                }
+            }
+        }
+    }
+};
+
+const scatterChart = new Chart(ctx, config);

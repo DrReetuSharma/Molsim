@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MolSimAI: AI based Molecular Comparison and Heatmap Visualization</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <div class="container mx-auto mt-10 p-6 bg-white shadow-lg rounded-lg">
+        <h1 class="text-4xl font-bold text-center mb-4">MolSimAI: AI based Molecular Comparison and Heatmap Visualization</h1>
+
+        <p class="text-center text-lg text-gray-700 mb-6">
+            Welcome to MolSimAI, a cutting-edge tool designed for advanced molecular similarity analysis using AI-driven algorithms. 
+                    </p>
+
+        <p class="text-center text-md text-gray-600 mb-6">
+            This application allows users to upload molecular datasets (SMILES format) and receive insights in the form of 
+            a similarity matrix and heatmap visualizations. 
+        </p>
+
+        <form method="post" action="/upload" enctype="multipart/form-data" class="mb-6">
+            <div class="flex justify-center">
+                <input type="file" name="file" class="mb-4 p-2 border border-gray-300 rounded-lg"/>
+            </div>
+            <div class="flex justify-center">
+                <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg">
+                    Upload and Analyze
+                </button>
+            </div>
+        </form>
+
+        <p class="text-center text-lg text-gray-700 mb-6">
+            After analysis, download the similarity matrix and visualize the results in a heatmap, which is ideal for 
+            identifying chemical patterns, structural similarities, and exploring molecular diversity.
+        </p>
+
+        <footer class="text-center text-sm text-gray-600 mt-8">
+            <p>For More Information Contact: <a href="mailto:sharmar@aspire10x.com" class="text-blue-600">sharmar@aspire10x.com</a></p>
+            <p><a href="{{url_for('documentation')}}" class="text-blue-600">Documentation/Tutorial</a></p>
+        </footer>
+    </div>
+</body>
+</html>
